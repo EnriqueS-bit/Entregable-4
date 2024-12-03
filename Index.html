@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MICROCONTROLADORES</h1>
+    </header>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#home" onclick="mostrarMensaje('Inicio')">Inicio</a></li>
+                <li><a href="#ESP32" onclick="mostrarMensaje('ESP32')">ESP-32</a></li>
+                <li><a href="#Arduino" onclick="mostrarMensaje('Arduino')">Arduino</a></li>
+                <li><a href="#ESP8266" onclick="mostrarMensaje('ESP8266')">ESP-8266</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <section id="home">
+            <h1>Bienvenidos a nuestro sitio</h1>
+            <p>Este es el contenido de la sección INICIO.</p>
+        </section>
+
+        <section onclick="mostrarMensaje('seccion ESP32')" id="ESP32">
+            <h2>ESP-32</h2>
+            <p>El ESP32 es un microcontrolador (SoC) desarrollado por Espressif Systems que integra conectividad Wi-Fi y Bluetooth,
+            lo que lo hace ideal para aplicaciones de Internet de las Cosas (IoT).</p>
+            <article>
+            El ESP32 es muy versátil y se puede utilizar tanto como un sistema autónomo como un dispositivo esclavo conectado a un MCU principal. 
+            Es popular en proyectos de electrónica y desarrollo de prototipos debido a su alta integración y bajo costo.
+            </article>
+            <ul>
+                <li>Procesador: CPU Xtensa de doble núcleo de 32 bits LX6, operando a 160 o 240 MHz.</li>
+                <li>Memoria: 520 KB de SRAM y 448 KB de ROM.</li>
+                <li>Conectividad: Wi-Fi 802.11 b/g/n y Bluetooth v4.2 BR/EDR y BLE.</li>
+                <li>Periféricos: Incluye sensores táctiles capacitivos, sensores Hall, interfaz de tarjeta SD, Ethernet, SPI de alta velocidad, UART, I²S e I²C.</li>
+            </ul>
+        </section>
+
+        <section onclick="mostrarMensaje('Seccion Arduino')" id="Arduino">
+            <h2>Arduino</h2>
+            <p>El Arduino es una plataforma de electrónica de código abierto que facilita la creación de proyectos interactivos. 
+            Está basada en hardware y software fáciles de usar, lo que la hace accesible tanto para principiantes como para expertos.</p>
+            <ul>
+                <li>Plataforma de código abierto: Tanto el hardware como el software de Arduino son de código abierto, lo que permite a los usuarios modificar y mejorar sus proyectos.</li>
+                <li>Facilidad de uso: Diseñado para ser accesible tanto para principiantes como para expertos, con una gran cantidad de recursos y documentación disponibles.</li>
+                <li>Variedad de placas: Existen diferentes modelos de placas Arduino, como Arduino Uno, Arduino Mega y Arduino Nano, cada una con diferentes capacidades y características.</li>
+                <li>Lenguaje de programación: Utiliza una variante de C/C++ y se programa a través del entorno de desarrollo integrado (IDE) de Arduino.</li>
+            </ul>
+        </section>
+
+        <section onclick="mostrarMensaje('seccion ESP8266')" id="ESP8266">
+            <h2>ESP-8266</h2>
+            <p>El ESP8266 es un microcontrolador de bajo costo con conectividad Wi-Fi, desarrollado por Espressif Systems. 
+            Es muy popular en proyectos de Internet de las Cosas (IoT) debido a su capacidad para conectarse a redes Wi-Fi y su facilidad de programación. </p>
+            <ul>
+                <li>Procesador: CPU RISC de 32 bits Tensilica Xtensa LX106, operando a 80 MHz (con posibilidad de overclocking a 160 MHz).</li>
+                <li>Memoria: 64 KB de RAM de instrucciones, 96 KB de RAM de datos y soporte para memoria flash externa de hasta 16 MB.</li>
+                <li>Conectividad: Wi-Fi 802.11 b/g/n a 2.4 GHz, compatible con WPA/WPA2.</li>
+                <li>Periféricos: 16 pines GPIO, PWM en todos los pines (10 bits), ADC de 10 bits, UART, SPI, I²C e I²S.</li>
+            </ul>
+        </section>
+         <P><span></span></P>
+    </div>
+    <script src="script.js"></script>
+    <table>
+        <tr>
+            <th>ESP-32</th>
+            <th>ESP-8266</th>
+            <th>Arduino</th>
+        </tr>
+        <tr>
+            <td><img src="ESP32.jpg" width="200" height="200" alt="Placa ESP32"></td>
+            <td><img src="ESP8266.jpg" width="250" height="200" alt="Placa ESP8266"></td>
+            <td><img src="Arduino Uno.png" width="400" height="200" alt="Placa Arduino"></td>
+        </tr>
+        <tr class="Nivel">
+            <td>Placa ESP32</td>
+            <td>Placa ESP8266</td>
+            <td>Placa Arduino</td>
+        </tr>
+    </table>
+    <section>
+        <h2>Contacto</h2>
+        <form action="">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label>Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label>Mensaje:</label>
+            <textarea name="Mensaje" id="Mensaje"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Contáctame: &copy - <a href="mailto:eesinning@unicesar.edu.co">Enrique E. Sinning M.</a>
+        <a href="https://github.com/EnriqueS-bit">Perfil de Github</a>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+</body>
+</html>
